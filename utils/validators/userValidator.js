@@ -17,9 +17,7 @@ exports.signUpValidator = [
     .notEmpty()
     .withMessage("the password of the user is required")
     .isLength({ min: 6 })
-    .withMessage("the password is too short")
-    .isLength({ max: 25 })
-    .withMessage("the password is too long"),
+    .withMessage("the password is too short"),
     validatorMiddleware,
 ];
 

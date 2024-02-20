@@ -16,7 +16,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         minlength: [6, 'Too short password'],
-        maxlength: [25, 'Too long password'],
     },
 
     profilePicture: String,
